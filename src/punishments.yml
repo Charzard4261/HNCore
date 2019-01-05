@@ -1,0 +1,5 @@
+chat:
+  muted: {}
+bans:
+  temporary: {}
+  permanent: {}

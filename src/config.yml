@@ -1,0 +1,6 @@
+announcements:
+  - "Want to harvest a spawner? Use an iron or diamond pickaxe that has silk touch!"
+  - "You can set a home with /sethome and return to it with /home"
+  - §1y§2e§3e
+silk-spawners: false
+claims: []

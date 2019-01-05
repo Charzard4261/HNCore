@@ -1,0 +1,130 @@
+groups:
+  member:
+    permissions:
+    - ChestShop.shop.*
+    - ChestShop.shop.buy
+    - ChestShop.shop.sell
+    - auctions.bypass.general.damageditems
+    - auctions.bypass.start.maxprice
+    - auctions.command.bid
+    - auctions.command.cancel
+    - auctions.command.end
+    - auctions.command.info
+    - auctions.command.queue
+    - auctions.command.start
+    - bukkit.command.help
+    - essentials.afk
+    - essentials.afk.auto
+    - essentials.back
+    - essentials.back.ondeath
+    - essentials.balance
+    - essentials.balancetop
+    - essentials.build.*
+    - essentials.build.*
+    - essentials.build.place.327
+    - essentials.delhome
+    - essentials.help
+    - essentials.home
+    - essentials.interact.*
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.msg
+    - essentials.msg.url
+    - essentials.pay
+    - essentials.pay.multiple
+    - essentials.payconfirmtoggle
+    - essentials.paytoggle
+    - essentials.protect.exemptbreak
+    - essentials.protect.exemptplacement
+    - essentials.protect.exemptusage
+    - essentials.sell
+    - essentials.sell.bulk
+    - essentials.sell.hand
+    - essentials.sethome
+    - essentials.spawn
+    - essentials.tpa
+    - essentials.tpaccept
+    - essentials.tpdeny
+    - essentials.warp
+    - essentials.warp.list
+    - essentials.warps.*
+    - frameProtect.place.*
+    - frameProtect.protect.*
+    - home.sethome
+    - landclaim.default
+    - landclaim.default
+    - minecraft.command.help
+    - modifyworld.*
+    - spawnershop.buy.blaze
+    - spawnershop.buy.chicken
+    - spawnershop.buy.cow
+    - spawnershop.buy.creeper
+    - spawnershop.buy.enderman
+    - spawnershop.buy.mushroomcow
+    - spawnershop.buy.pig
+    - spawnershop.buy.sheep
+    - spawnershop.buy.skeleton
+    - spawnershop.buy.spider
+    - spawnershop.buy.witch
+    - spawnershop.buy.zombie
+    - spawnershop.buy.zombiepigman
+    - spawnershop.signs.use
+    - spawnershop.use
+    - wild.wildtp
+    - wild.wildtp.others
+    - worldguard.build.*
+    - griefprevention.lava
+    - griefprevention.claims
+    - griefprevention.createclaims
+    - griefprevention.transferclaim
+    - griefprevention.visualizenearbyclaims
+    - griefprevention.buysellclaimblocks
+    - griefprevention.seeinactivity
+    - griefprevention.seeclaimsize
+    - griefprevention.trapped
+    options:
+      prefix: '&bMember &r'
+  donator:
+    permissions:
+    - essentials.sethome.multiple
+    - essentials.sethome.multiple.donator
+    - spawnershop.buy.irongolem
+    - HN.donator.*
+    inheritance:
+    - member
+    options:
+      prefix: '&eDonator &r'
+  helper:
+    permissions:
+    - minecraft.command.kick
+    inheritance:
+    - member
+    options:
+      prefix: '&7[&bHelper&7] &b'
+  moderator:
+    permissions:
+    - HN.*
+    - essentials.sethome.multiple
+    - essentials.sethome.multiple.unlimited
+    inheritance:
+    - helper
+    options:
+      prefix: '&a&lModerator &r'
+  admin:
+    permissions:
+    - essentials.delwarp
+    - essentials.setwarp
+    inheritance:
+    - moderator
+    options:
+      prefix: '&5&lAdmin &r'
+  owner:
+    permissions:
+    - '*'
+    options:
+      prefix: '&4&lOwner &r'
+  developer:
+    permissions:
+    - '*'
+    options:
+      prefix: '&7[&aDeveloper&7] &a'

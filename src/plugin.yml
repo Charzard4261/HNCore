@@ -1,0 +1,37 @@
+name: HNCore
+main: hn.core.Core
+version: 1
+api-version: 1.13
+permissions: 
+  HN.*:
+    description: Wildcard permission
+    default: op
+    children:
+      HN.donator.*: true
+      HN.manage: true
+      HN.ranks.*: true
+      HN.punish.*: true
+  HN.donator.*:
+    description: Allows access to donator perms
+    default: false
+    children:
+      HN.donator.multiplehomes: true
+  HN.donator.multiplehomes:
+    description: Allows multiple homes to be set
+  HN.manage:
+    description: Allows access to the management GUI
+  HN.ranks.*: 
+    description: Core's ranks wildcard permission
+    children:
+      HN.ranks.set: true
+  HN.ranks.set:
+    description: Allows user to set ranks
+  HN.punish.*:
+    description: Core's punish wildcard permission
+    children:
+      HN.punish.ban: true
+      HN.punish.mute: true
+  HN.punish.ban:
+    description: Allows user to ban players
+  HN.punish.mute:
+    description: Allows user to mute players
